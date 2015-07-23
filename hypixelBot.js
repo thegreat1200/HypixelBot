@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/thegreat1200/hypixelBot/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -231,26 +231,26 @@
         return str;
     };
 
-    var botCreator = "Matthew (Yemasthui)";
-    var botMaintainer = "Benzi"
+    var botCreator = "thegreat1200";
+    var botMaintainer = "thegreat1200"
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
         version: "2.8.10",
         status: false,
-        name: "basicBot",
+        name: "HypixelBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
+        scriptLink: "https://rawgit.com/thegreat1200/hypixelBot/master/hypixelBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/thegreat1200/hypixelBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "hypixelBot",
             language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+            chatLink: "https://rawgit.com/thegreat1200/hypixelBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
@@ -291,7 +291,7 @@
             afkRankCheck: "ambassador",
             motdEnabled: false,
             motdInterval: 5,
-            motd: "Temporary Message of the Day",
+            motd: "Join Hypixel Today! hypixel.net/play",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
@@ -306,9 +306,9 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/OPlist.json",
-                BANNED: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/thegreat1200/hypixelBot/master/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/thegreat1200/hypixelBot/master/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/thegreat1200/hypixelBot/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
